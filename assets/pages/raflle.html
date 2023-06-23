@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mindy Travel</title>
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="shortcut icon" href="../images/icon.png" type="image/x-icon">
+</head>
+<body>
+<header class="header">
+    <nav>
+    <a href="../../index.html">Home</a>
+    <a href="./about.html">About us</a>
+    <a href="./contact.html">Contact</a>
+    <a href="./information.html">More information</a>
+    <a href="./benefits.html">Benefits and tips</a>
+    <a href="#">Raffle</a>
+    </nav>
+    <img class="logo" src="../images/logo.png" alt="Mindy Travel" title="Mindy Travel">
+</header>
+<header class="header">
+    <h2 class="h2">Raffle</h2>
+    <h3 class="h3">You can collaborate and participate in a raffle for a 1-week trip</h3>
+</header> 
+<main class="main1"> 
+<form action="./show_data.html" method="get">
+<div class="map">
+         <h4 class="h4">To participe you must be from Toronto, Canada</h4>
+         <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d184551.90977297974!2d-79.54286371896974!3d43.71837095796389!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89d4cb90d7c63ba5%3A0x323555502ab4c477!2sToronto%2C%20Ontario%2C%20Canad%C3%A1!5e0!3m2!1ses!2sar!4v1687465361337!5m2!1ses!2sar" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</div>
+         <fieldset class="fieldset">
+        <label for="first-name">First Name:</label>
+        <input type="text" id="first-name" name="user-first-name">
+
+        <label for="last-name">Last name</label>
+        <input type="text" id="last-name" name="user-last-name">
+
+        <label for="client-email">E-mail</label>
+        <input type="email" name="user-email" id="client-email">
+
+        <label for="choose-country">Choose country</label>
+        <select name="select" id="choose-country">
+            <option value="country-selected">Argentinean</option>
+            <option value="country-selected">Brazil</option>
+            <option value="country-selected">United States</option>
+            <option value="country-selected">United Kingdom</option>
+            <option value="country-selected">Swiss</option>
+        </select>
+
+        <label for="choose-date">Choose date</label>
+        <select name="date" id="choose-date">
+            <option value="date-selected">05/10</option>
+            <option value="date-selected">10/10</option>
+            <option value="date-selected">15/10</option>
+            <option value="date-selected">20/10</option>
+            <option value="date-selected">25/10</option>
+        </select>
+        <div class="payment">
+        <h4> Payment options</h4>
+        <label for="cash">Cash</label>
+        <input type="radio" name="payment-option" id="cash">
+        <label for="credit-card">Credit card</label>
+        <input type="radio" name="payment-option" id="credit-card">
+        <label for="debit-card">Debit card</label>
+        <input type="radio" name="payment-option" id="debit-card">
+        </div>
+    <label for="message">Message (optional)</label>
+    <textarea name="client-message" id="message" cols="30" rows="10"></textarea>
+    <div class="terms">
+    <label for="terms">I accept the terms and conditions</label>
+    <input type="checkbox" name="clients" id="terms"> 
+    </div>
+    <input class="send" type="submit" value="Send">
+</fieldset>
+</form>
+</main>
+<footer>
+    <p class="footer">Created by: Fabrizio Pozzebon</p>
+</footer>
+</body>
+</html>
